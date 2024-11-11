@@ -23,4 +23,30 @@ async def main():
     t2 = asyncio.create_task(traffic_light2(order2))
     await asyncio.gather(t1, t2)
 
+
+asyncio.run(main())
+
+
+###
+
+
+async def red():
+    print('red')
+
+
+async def yellow():
+    print('yellow')
+
+
+async def green():
+    print('green')
+
+
+async def main():
+    t1 = asyncio.create_task(red())
+    t2 = asyncio.create_task(yellow())
+    t3 = asyncio.create_task(green())
+    await asyncio.gather(t1, t2, t3)
+
+
 asyncio.run(main())

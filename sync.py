@@ -21,3 +21,23 @@ print(next(all_colors, sleep(2)))
 print(next(all_colors, sleep(2)))
 print(next(all_colors, sleep(2)))
 traffic_light2(order2)
+
+
+###
+
+
+def red():
+    print('red')
+
+
+def yellow():
+    print('yellow')
+
+
+def green():
+    print('green')
+
+
+red()
+yellow()
+green()
